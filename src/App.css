@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+* {
+  font-family: "Orbitron", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  min-width: 580px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-size: 24px;
+}
+.counter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.counter__item {
+  padding-right: 10px;
+  font-size: 64px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location {
+}
+.CTA {
+  margin-top: 50px;
+  text-align: center;
+  border: 1px solid red;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.CTA:hover {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}
+.CTA--SEND {
+  width: 100%;
+  background-color: black;
+  color: red;
+}
+.form {
+  width: 100%;
+  /* background-color: rgb(43, 43, 43); */
+}
+.inputElement {
+  border: 1px solid red;
+  padding: 10px;
+  margin-top: 5px;
+}
+.input {
+  font-size: 16px;
+  padding: 5px;
+  width: 91%;
+  margin: 0 auto;
+  color: red;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+.modal {
+  margin-top: 50px;
 }
